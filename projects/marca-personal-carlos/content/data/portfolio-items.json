@@ -1,0 +1,132 @@
+[
+  {
+    "id": "fitness-cinematic-01",
+    "title": "Fitness Cinematográfico",
+    "subtitle": "Disciplina, energía y transformación en cada frame.",
+    "category": "fitness-cinematic",
+    "categoryLabel": "Reels Fitness Cinematográficos",
+    "thumbnail": "assets/portfolio/thumbnails/fitness-cinematic/thumb-fitness-cinematic-01.png",
+    "video": "assets/videos/portfolio/fitness-cinematic/video-fitness-cinematic-01.mp4",
+    "featured": true
+  },
+  {
+    "id": "fitness-cinematic-02",
+    "title": "Fitness Cinematográfico 02",
+    "subtitle": "Transiciones con IA · Cinematografía real.",
+    "category": "fitness-cinematic",
+    "categoryLabel": "Reels Fitness Cinematográficos",
+    "thumbnail": "assets/portfolio/thumbnails/fitness-cinematic/thumb-fitness-cinematic-02.png",
+    "video": "assets/videos/portfolio/fitness-cinematic/video-fitness-cinematic-02.mp4",
+    "featured": false
+  },
+  {
+    "id": "fitness-cinematic-03",
+    "title": "Fitness Cinematográfico 03",
+    "subtitle": "Color grading premium · Sound design cinematográfico.",
+    "category": "fitness-cinematic",
+    "categoryLabel": "Reels Fitness Cinematográficos",
+    "thumbnail": "assets/portfolio/thumbnails/fitness-cinematic/thumb-fitness-cinematic-03.png",
+    "video": "assets/videos/portfolio/fitness-cinematic/video-fitness-cinematic-03.mp4",
+    "featured": false
+  },
+  {
+    "id": "fitness-mp-01",
+    "title": "Marca Personal Fitness",
+    "subtitle": "Identidad visual que posiciona y convierte.",
+    "category": "fitness-marca-personal",
+    "categoryLabel": "Reels Fitness Marca Personal",
+    "thumbnail": "assets/portfolio/thumbnails/fitness-marca-personal/thumb-fitness-mp-01.png",
+    "video": "assets/videos/portfolio/fitness-marca-personal/video-fitness-mp-01.mp4",
+    "featured": true
+  },
+  {
+    "id": "fitness-mp-02",
+    "title": "Marca Personal Fitness 02",
+    "subtitle": "Storytelling visual para marcas personales.",
+    "category": "fitness-marca-personal",
+    "categoryLabel": "Reels Fitness Marca Personal",
+    "thumbnail": "assets/portfolio/thumbnails/fitness-marca-personal/thumb-fitness-mp-02.png",
+    "video": "assets/videos/portfolio/fitness-marca-personal/video-fitness-mp-02.mp4",
+    "featured": false
+  },
+  {
+    "id": "brand-clothing-01",
+    "title": "Marcas de Ropa",
+    "subtitle": "Lanzamientos y drops con estética streetwear premium.",
+    "category": "marcas-ropa",
+    "categoryLabel": "Reels Marcas de Ropa",
+    "thumbnail": "assets/portfolio/thumbnails/marcas-ropa/thumb-brand-clothing-01.png",
+    "video": "assets/videos/portfolio/marcas-ropa/video-brand-clothing-01.mp4",
+    "featured": true
+  },
+  {
+    "id": "brand-clothing-02",
+    "title": "Marcas de Ropa 02",
+    "subtitle": "Contenido generado con IA · Consistencia de personaje.",
+    "category": "marcas-ropa",
+    "categoryLabel": "Reels Marcas de Ropa",
+    "thumbnail": "assets/portfolio/thumbnails/marcas-ropa/thumb-brand-clothing-02.png",
+    "video": "assets/videos/portfolio/marcas-ropa/video-brand-clothing-02.mp4",
+    "featured": false
+  },
+  {
+    "id": "emprendimiento-01",
+    "title": "Emprendimiento Promocional",
+    "subtitle": "Contenido que capta atención y transmite identidad.",
+    "category": "otros",
+    "categoryLabel": "Otros",
+    "thumbnail": "assets/portfolio/thumbnails/otros/thumb-reel-emprendimiento-01.png",
+    "video": "assets/videos/portfolio/otros/reel-emprendimiento-01.mp4",
+    "featured": true
+  },
+  {
+    "id": "emprendimiento-02",
+    "title": "Emprendimiento Promocional 02",
+    "subtitle": "Videos comerciales optimizados para redes.",
+    "category": "otros",
+    "categoryLabel": "Otros",
+    "thumbnail": "assets/portfolio/thumbnails/otros/thumb-reel-emprendimiento-02.png",
+    "video": "assets/videos/portfolio/otros/reel-emprendimiento-02.mp4",
+    "featured": false
+  },
+  {
+    "id": "emprendimiento-03",
+    "title": "Emprendimiento Promocional 03",
+    "subtitle": "Edición dinámica para negocios locales.",
+    "category": "otros",
+    "categoryLabel": "Otros",
+    "thumbnail": "assets/portfolio/thumbnails/otros/thumb-reel-emprendimiento-03.png",
+    "video": "assets/videos/portfolio/otros/reel-emprendimiento-03.mp4",
+    "featured": false
+  },
+  {
+    "id": "emprendimiento-04",
+    "title": "Emprendimiento Promocional 04",
+    "subtitle": "Estética visual coherente con el branding.",
+    "category": "otros",
+    "categoryLabel": "Otros",
+    "thumbnail": "assets/portfolio/thumbnails/otros/thumb-reel-emprendimiento-04.png",
+    "video": "assets/videos/portfolio/otros/reel-emprendimiento-04.mp4",
+    "featured": false
+  },
+  {
+    "id": "motion-01",
+    "title": "Motion Graphics",
+    "subtitle": "Animación y movimiento con intención narrativa.",
+    "category": "otros",
+    "categoryLabel": "Otros",
+    "thumbnail": "assets/portfolio/thumbnails/otros/thumb-reel-motionG-01.png",
+    "video": "assets/videos/portfolio/otros/reel-motionG-01.mp4",
+    "featured": false
+  },
+  {
+    "id": "ui-animation-01",
+    "title": "Animación UI / UX",
+    "subtitle": "Interfaces animadas con ritmo visual y precisión.",
+    "category": "otros",
+    "categoryLabel": "Otros",
+    "thumbnail": "assets/portfolio/thumbnails/otros/thumb-reel-UIanimation-01.png",
+    "video": "assets/videos/portfolio/otros/reel-UIanimation-01.mp4",
+    "featured": false
+  }
+]
