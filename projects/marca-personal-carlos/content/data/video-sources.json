@@ -1,0 +1,114 @@
+{
+  "hero": {
+    "home01": {
+      "publicId": "videos/hero/hero-home-01",
+      "src": "https://res.cloudinary.com/djsqzbj0j/video/upload/v1774916034/hero-home-01_fbnmxk.mp4"
+    },
+    "contacto01": {
+      "publicId": "videos/hero/hero-contacto-01",
+      "src": "https://res.cloudinary.com/djsqzbj0j/video/upload/v1774916033/hero-contacto-01_bq2uod.mp4"
+    }
+  },
+
+  "iaTransitions": [
+    {
+      "id": "ia-fire-lava-01",
+      "publicId": "videos/ia-transitions/ia-fire-lava-01",
+      "src": "https://res.cloudinary.com/djsqzbj0j/video/upload/v1774916072/ia-fire-lava-01_ow1mwd.mp4"
+    },
+    {
+      "id": "ia-mix-media-01",
+      "publicId": "videos/ia-transitions/ia-mix-media-01",
+      "src": "https://res.cloudinary.com/djsqzbj0j/video/upload/v1774916072/ia-mix-media-01_txrkmz.mp4"
+    },
+    {
+      "id": "ia-motion-control-01",
+      "publicId": "videos/ia-transitions/ia-motion-control-01",
+      "src": "https://res.cloudinary.com/djsqzbj0j/video/upload/v1774916074/ia-motion-control-01_wbfltw.mp4"
+    },
+    {
+      "id": "ia-raven-01",
+      "publicId": "videos/ia-transitions/ia-raven-01",
+      "src": "https://res.cloudinary.com/djsqzbj0j/video/upload/v1774916074/ia-raven-01_brc9gs.mp4"
+    }
+  ],
+
+  "portfolio": {
+    "fitnessCinematic": [
+      {
+        "id": "video-fitness-cinematic-01",
+        "publicId": "videos/portfolio/fitness-cinematic/video-fitness-cinematic-01",
+        "src": "https://res.cloudinary.com/djsqzbj0j/video/upload/v1774916112/video-fitness-cinematic-01_yjtzuo.mp4"
+      },
+      {
+        "id": "video-fitness-cinematic-02",
+        "publicId": "videos/portfolio/fitness-cinematic/video-fitness-cinematic-02",
+        "src": "https://res.cloudinary.com/djsqzbj0j/video/upload/v1774916117/video-fitness-cinematic-02_ez5ntl.mp4"
+      },
+      {
+        "id": "video-fitness-cinematic-03",
+        "publicId": "videos/portfolio/fitness-cinematic/video-fitness-cinematic-03",
+        "src": "https://res.cloudinary.com/djsqzbj0j/video/upload/v1774917197/video-fitness-cinematic-03_kwhtjp.mp4"
+      }
+    ],
+
+    "fitnessMarcaPersonal": [
+      {
+        "id": "video-fitness-mp-01",
+        "publicId": "videos/portfolio/fitness-marca-personal/video-fitness-mp-01",
+        "src": "https://res.cloudinary.com/djsqzbj0j/video/upload/v1774916337/video-fitness-mp-01_mjfaer.mp4"
+      },
+      {
+        "id": "video-fitness-mp-02",
+        "publicId": "videos/portfolio/fitness-marca-personal/video-fitness-mp-02",
+        "src": "https://res.cloudinary.com/djsqzbj0j/video/upload/v1774917229/video-fitness-mp-02_ljcda4.mp4"
+      }
+    ],
+
+    "marcasRopa": [
+      {
+        "id": "video-brand-clothing-01",
+        "publicId": "videos/portfolio/marcas-ropa/video-brand-clothing-01",
+        "src": "https://res.cloudinary.com/djsqzbj0j/video/upload/v1774916436/video-brand-clothing-01_vcfcyo.mp4"
+      },
+      {
+        "id": "video-brand-clothing-02",
+        "publicId": "videos/portfolio/marcas-ropa/video-brand-clothing-02",
+        "src": "https://res.cloudinary.com/djsqzbj0j/video/upload/v1774916434/video-brand-clothing-02_calxbq.mp4"
+      }
+    ],
+
+    "otros": [
+      {
+        "id": "reel-emprendimiento-01",
+        "publicId": "videos/portfolio/otros/reel-emprendimiento-01",
+        "src": "https://res.cloudinary.com/djsqzbj0j/video/upload/v1774916887/reel-emprendimiento-01_l7qgzk.mp4"
+      },
+      {
+        "id": "reel-emprendimiento-02",
+        "publicId": "videos/portfolio/otros/reel-emprendimiento-02",
+        "src": "https://res.cloudinary.com/djsqzbj0j/video/upload/v1774916496/reel-emprendimiento-02_fkzaqr.mp4"
+      },
+      {
+        "id": "reel-emprendimiento-03",
+        "publicId": "videos/portfolio/otros/reel-emprendimiento-03",
+        "src": "https://res.cloudinary.com/djsqzbj0j/video/upload/v1774916500/reel-emprendimiento-03_q3g0jn.mp4"
+      },
+      {
+        "id": "reel-emprendimiento-04",
+        "publicId": "videos/portfolio/otros/reel-emprendimiento-04",
+        "src": "https://res.cloudinary.com/djsqzbj0j/video/upload/v1774916496/reel-emprendimiento-04_uhydc0.mp4"
+      },
+      {
+        "id": "reel-motionG-01",
+        "publicId": "videos/portfolio/otros/reel-motionG-01",
+        "src": "https://res.cloudinary.com/djsqzbj0j/video/upload/v1774916500/reel-motionG-01_xq4nve.mp4"
+      },
+      {
+        "id": "reel-Ulanimation-01",
+        "publicId": "videos/portfolio/otros/reel-Ulanimation-01",
+        "src": "https://res.cloudinary.com/djsqzbj0j/video/upload/v1774916500/reel-UIanimation-01_jjschi.mp4"
+      }
+    ]
+  }
+}

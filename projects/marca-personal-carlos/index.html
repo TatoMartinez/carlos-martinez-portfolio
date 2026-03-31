@@ -685,6 +685,7 @@
       cursor: none;
     }
     .ia-item video {
+      position: absolute; inset: 0; z-index: 1;
       width: 100%; height: 100%;
       object-fit: cover;
       display: block;
@@ -1576,8 +1577,7 @@
   <section id="hero" aria-label="Presentación">
     <div class="hero-video-bg" aria-hidden="true" style="background:linear-gradient(160deg,#0c0c0c 0%,#1a1a1a 55%,#080808 100%);">
       <video autoplay muted loop playsinline preload="none">
-        <!-- PRODUCTION: descomentar y reemplazar con URL CDN para activar video de fondo -->
-        <!-- <source src="assets/videos/hero/hero-home-01.mp4" type="video/mp4" /> -->
+        <source src="https://res.cloudinary.com/djsqzbj0j/video/upload/v1774916034/hero-home-01_fbnmxk.mp4" type="video/mp4" />
       </video>
     </div>
     <div class="hero-grain" aria-hidden="true"></div>
@@ -1669,11 +1669,10 @@
 
       <div class="ia-grid reveal">
 
-        <div class="ia-item" data-video="" data-video-src="assets/videos/ia-transitions/ia-fire-lava-01.mp4"
+        <div class="ia-item" data-video="https://res.cloudinary.com/djsqzbj0j/video/upload/v1774916072/ia-fire-lava-01_ow1mwd.mp4" data-video-src="https://res.cloudinary.com/djsqzbj0j/video/upload/v1774916072/ia-fire-lava-01_ow1mwd.mp4"
              role="button" tabindex="0" aria-label="Ver transición: Fire Lava">
-          <!-- PRODUCTION: reemplazar src con CDN URL para activar preview en loop
-          <video src="assets/videos/ia-transitions/ia-fire-lava-01.mp4"
-                 autoplay muted loop playsinline preload="none" aria-hidden="true"></video> -->
+          <video src="https://res.cloudinary.com/djsqzbj0j/video/upload/v1774916072/ia-fire-lava-01_ow1mwd.mp4"
+                 autoplay muted loop playsinline preload="none" aria-hidden="true"></video>
           <div class="ia-item-static" aria-hidden="true" style="position:absolute;inset:0;background:linear-gradient(135deg,#100808 0%,#2a1010 60%,#0f0f0f 100%);"></div>
           <div class="ia-item-overlay">
             <div>
@@ -1683,11 +1682,10 @@
           </div>
         </div>
 
-        <div class="ia-item" data-video="" data-video-src="assets/videos/ia-transitions/ia-raven-01.mp4"
+        <div class="ia-item" data-video="https://res.cloudinary.com/djsqzbj0j/video/upload/v1774916074/ia-raven-01_brc9gs.mp4" data-video-src="https://res.cloudinary.com/djsqzbj0j/video/upload/v1774916074/ia-raven-01_brc9gs.mp4"
              role="button" tabindex="0" aria-label="Ver transición: Raven">
-          <!-- PRODUCTION: reemplazar src con CDN URL para activar preview en loop
-          <video src="assets/videos/ia-transitions/ia-raven-01.mp4"
-                 autoplay muted loop playsinline preload="none" aria-hidden="true"></video> -->
+          <video src="https://res.cloudinary.com/djsqzbj0j/video/upload/v1774916074/ia-raven-01_brc9gs.mp4"
+                 autoplay muted loop playsinline preload="none" aria-hidden="true"></video>
           <div class="ia-item-static" aria-hidden="true" style="position:absolute;inset:0;background:linear-gradient(135deg,#080c12 0%,#101828 60%,#0a0a0f 100%);"></div>
           <div class="ia-item-overlay">
             <div>
@@ -1697,11 +1695,10 @@
           </div>
         </div>
 
-        <div class="ia-item" data-video="" data-video-src="assets/videos/ia-transitions/ia-mix-media-01.mp4"
+        <div class="ia-item" data-video="https://res.cloudinary.com/djsqzbj0j/video/upload/v1774916072/ia-mix-media-01_txrkmz.mp4" data-video-src="https://res.cloudinary.com/djsqzbj0j/video/upload/v1774916072/ia-mix-media-01_txrkmz.mp4"
              role="button" tabindex="0" aria-label="Ver transición: Mix Media">
-          <!-- PRODUCTION: reemplazar src con CDN URL para activar preview en loop
-          <video src="assets/videos/ia-transitions/ia-mix-media-01.mp4"
-                 autoplay muted loop playsinline preload="none" aria-hidden="true"></video> -->
+          <video src="https://res.cloudinary.com/djsqzbj0j/video/upload/v1774916072/ia-mix-media-01_txrkmz.mp4"
+                 autoplay muted loop playsinline preload="none" aria-hidden="true"></video>
           <div class="ia-item-static" aria-hidden="true" style="position:absolute;inset:0;background:linear-gradient(135deg,#0a0c0a 0%,#1a2018 60%,#0a0f0a 100%);"></div>
           <div class="ia-item-overlay">
             <div>
@@ -1711,11 +1708,10 @@
           </div>
         </div>
 
-        <div class="ia-item" data-video="" data-video-src="assets/videos/ia-transitions/ia-motion-control-01.mp4"
+        <div class="ia-item" data-video="https://res.cloudinary.com/djsqzbj0j/video/upload/v1774916074/ia-motion-control-01_wbfltw.mp4" data-video-src="https://res.cloudinary.com/djsqzbj0j/video/upload/v1774916074/ia-motion-control-01_wbfltw.mp4"
              role="button" tabindex="0" aria-label="Ver transición: Motion Control">
-          <!-- PRODUCTION: reemplazar src con CDN URL para activar preview en loop
-          <video src="assets/videos/ia-transitions/ia-motion-control-01.mp4"
-                 autoplay muted loop playsinline preload="none" aria-hidden="true"></video> -->
+          <video src="https://res.cloudinary.com/djsqzbj0j/video/upload/v1774916074/ia-motion-control-01_wbfltw.mp4"
+                 autoplay muted loop playsinline preload="none" aria-hidden="true"></video>
           <div class="ia-item-static" aria-hidden="true" style="position:absolute;inset:0;background:linear-gradient(135deg,#0a080c 0%,#1e1428 60%,#0a080f 100%);"></div>
           <div class="ia-item-overlay">
             <div>
@@ -2073,8 +2069,7 @@
     <!-- Video de fondo — hero de cierre -->
     <div class="contact-video-bg" aria-hidden="true" style="background:linear-gradient(160deg,#0c0c0c 0%,#1a1a1a 55%,#080808 100%);">
       <video autoplay muted loop playsinline preload="none">
-        <!-- PRODUCTION: descomentar y reemplazar con URL CDN para activar video de fondo -->
-        <!-- <source src="assets/videos/hero/hero-contacto-01.mp4" type="video/mp4" /> -->
+        <source src="https://res.cloudinary.com/djsqzbj0j/video/upload/v1774916033/hero-contacto-01_bq2uod.mp4" type="video/mp4" />
       </video>
     </div>
 
@@ -2383,21 +2378,20 @@
     /* ── PORTFOLIO ──────────────────────────────────────────── */
 
     // Fallback data (idéntica a portfolio-items.json — usada si fetch falla en file://)
-    // PRODUCTION: campo video vacío — reemplazar con YouTube ID (11 chars) o 'vimeo:ID' cuando estén disponibles
     const PORTFOLIO_FALLBACK = [
-      { id:'fitness-cinematic-01', title:'Fitness Cinematográfico', subtitle:'Disciplina, energía y transformación en cada frame.', category:'fitness-cinematic', categoryLabel:'Reels Fitness Cinematográficos', thumbnail:'assets/portfolio/thumbnails/fitness-cinematic/thumb-fitness-cinematic-01.png', video:'' /* TODO: YouTube ID o vimeo:ID */, featured:true },
-      { id:'fitness-cinematic-02', title:'Fitness Cinematográfico 02', subtitle:'Transiciones con IA · Cinematografía real.', category:'fitness-cinematic', categoryLabel:'Reels Fitness Cinematográficos', thumbnail:'assets/portfolio/thumbnails/fitness-cinematic/thumb-fitness-cinematic-02.png', video:'' /* TODO: YouTube ID o vimeo:ID */, featured:false },
-      { id:'fitness-cinematic-03', title:'Fitness Cinematográfico 03', subtitle:'Color grading premium · Sound design cinematográfico.', category:'fitness-cinematic', categoryLabel:'Reels Fitness Cinematográficos', thumbnail:'assets/portfolio/thumbnails/fitness-cinematic/thumb-fitness-cinematic-03.png', video:'' /* TODO: YouTube ID o vimeo:ID */, featured:false },
-      { id:'fitness-mp-01', title:'Marca Personal Fitness', subtitle:'Identidad visual que posiciona y convierte.', category:'fitness-marca-personal', categoryLabel:'Reels Fitness Marca Personal', thumbnail:'assets/portfolio/thumbnails/fitness-marca-personal/thumb-fitness-mp-01.png', video:'' /* TODO: YouTube ID o vimeo:ID */, featured:true },
-      { id:'fitness-mp-02', title:'Marca Personal Fitness 02', subtitle:'Storytelling visual para marcas personales.', category:'fitness-marca-personal', categoryLabel:'Reels Fitness Marca Personal', thumbnail:'assets/portfolio/thumbnails/fitness-marca-personal/thumb-fitness-mp-02.png', video:'' /* TODO: YouTube ID o vimeo:ID */, featured:false },
-      { id:'brand-clothing-01', title:'Marcas de Ropa', subtitle:'Lanzamientos y drops con estética streetwear premium.', category:'marcas-ropa', categoryLabel:'Reels Marcas de Ropa', thumbnail:'assets/portfolio/thumbnails/marcas-ropa/thumb-brand-clothing-01.png', video:'' /* TODO: YouTube ID o vimeo:ID */, featured:true },
-      { id:'brand-clothing-02', title:'Marcas de Ropa 02', subtitle:'Contenido generado con IA · Consistencia de personaje.', category:'marcas-ropa', categoryLabel:'Reels Marcas de Ropa', thumbnail:'assets/portfolio/thumbnails/marcas-ropa/thumb-brand-clothing-02.png', video:'' /* TODO: YouTube ID o vimeo:ID */, featured:false },
-      { id:'emprendimiento-01', title:'Emprendimiento Promocional', subtitle:'Contenido que capta atención y transmite identidad.', category:'otros', categoryLabel:'Otros', thumbnail:'assets/portfolio/thumbnails/otros/thumb-reel-emprendimiento-01.png', video:'' /* TODO: YouTube ID o vimeo:ID */, featured:true },
-      { id:'emprendimiento-02', title:'Emprendimiento Promocional 02', subtitle:'Videos comerciales optimizados para redes.', category:'otros', categoryLabel:'Otros', thumbnail:'assets/portfolio/thumbnails/otros/thumb-reel-emprendimiento-02.png', video:'' /* TODO: YouTube ID o vimeo:ID */, featured:false },
-      { id:'emprendimiento-03', title:'Emprendimiento Promocional 03', subtitle:'Edición dinámica para negocios locales.', category:'otros', categoryLabel:'Otros', thumbnail:'assets/portfolio/thumbnails/otros/thumb-reel-emprendimiento-03.png', video:'' /* TODO: YouTube ID o vimeo:ID */, featured:false },
-      { id:'emprendimiento-04', title:'Emprendimiento Promocional 04', subtitle:'Estética visual coherente con el branding.', category:'otros', categoryLabel:'Otros', thumbnail:'assets/portfolio/thumbnails/otros/thumb-reel-emprendimiento-04.png', video:'' /* TODO: YouTube ID o vimeo:ID */, featured:false },
-      { id:'motion-01', title:'Motion Graphics', subtitle:'Animación y movimiento con intención narrativa.', category:'otros', categoryLabel:'Otros', thumbnail:'assets/portfolio/thumbnails/otros/thumb-reel-motionG-01.png', video:'' /* TODO: YouTube ID o vimeo:ID */, featured:false },
-      { id:'ui-animation-01', title:'Animación UI / UX', subtitle:'Interfaces animadas con ritmo visual y precisión.', category:'otros', categoryLabel:'Otros', thumbnail:'assets/portfolio/thumbnails/otros/thumb-reel-UIanimation-01.png', video:'' /* TODO: YouTube ID o vimeo:ID */, featured:false }
+      { id:'fitness-cinematic-01', title:'Fitness Cinematográfico', subtitle:'Disciplina, energía y transformación en cada frame.', category:'fitness-cinematic', categoryLabel:'Reels Fitness Cinematográficos', thumbnail:'assets/portfolio/thumbnails/fitness-cinematic/thumb-fitness-cinematic-01.png', video:'https://res.cloudinary.com/djsqzbj0j/video/upload/v1774916112/video-fitness-cinematic-01_yjtzuo.mp4', featured:true },
+      { id:'fitness-cinematic-02', title:'Fitness Cinematográfico 02', subtitle:'Transiciones con IA · Cinematografía real.', category:'fitness-cinematic', categoryLabel:'Reels Fitness Cinematográficos', thumbnail:'assets/portfolio/thumbnails/fitness-cinematic/thumb-fitness-cinematic-02.png', video:'https://res.cloudinary.com/djsqzbj0j/video/upload/v1774916117/video-fitness-cinematic-02_ez5ntl.mp4', featured:false },
+      { id:'fitness-cinematic-03', title:'Fitness Cinematográfico 03', subtitle:'Color grading premium · Sound design cinematográfico.', category:'fitness-cinematic', categoryLabel:'Reels Fitness Cinematográficos', thumbnail:'assets/portfolio/thumbnails/fitness-cinematic/thumb-fitness-cinematic-03.png', video:'https://res.cloudinary.com/djsqzbj0j/video/upload/v1774917197/video-fitness-cinematic-03_kwhtjp.mp4', featured:false },
+      { id:'fitness-mp-01', title:'Marca Personal Fitness', subtitle:'Identidad visual que posiciona y convierte.', category:'fitness-marca-personal', categoryLabel:'Reels Fitness Marca Personal', thumbnail:'assets/portfolio/thumbnails/fitness-marca-personal/thumb-fitness-mp-01.png', video:'https://res.cloudinary.com/djsqzbj0j/video/upload/v1774916337/video-fitness-mp-01_mjfaer.mp4', featured:true },
+      { id:'fitness-mp-02', title:'Marca Personal Fitness 02', subtitle:'Storytelling visual para marcas personales.', category:'fitness-marca-personal', categoryLabel:'Reels Fitness Marca Personal', thumbnail:'assets/portfolio/thumbnails/fitness-marca-personal/thumb-fitness-mp-02.png', video:'https://res.cloudinary.com/djsqzbj0j/video/upload/v1774917229/video-fitness-mp-02_ljcda4.mp4', featured:false },
+      { id:'brand-clothing-01', title:'Marcas de Ropa', subtitle:'Lanzamientos y drops con estética streetwear premium.', category:'marcas-ropa', categoryLabel:'Reels Marcas de Ropa', thumbnail:'assets/portfolio/thumbnails/marcas-ropa/thumb-brand-clothing-01.png', video:'https://res.cloudinary.com/djsqzbj0j/video/upload/v1774916436/video-brand-clothing-01_vcfcyo.mp4', featured:true },
+      { id:'brand-clothing-02', title:'Marcas de Ropa 02', subtitle:'Contenido generado con IA · Consistencia de personaje.', category:'marcas-ropa', categoryLabel:'Reels Marcas de Ropa', thumbnail:'assets/portfolio/thumbnails/marcas-ropa/thumb-brand-clothing-02.png', video:'https://res.cloudinary.com/djsqzbj0j/video/upload/v1774916434/video-brand-clothing-02_calxbq.mp4', featured:false },
+      { id:'emprendimiento-01', title:'Emprendimiento Promocional', subtitle:'Contenido que capta atención y transmite identidad.', category:'otros', categoryLabel:'Otros', thumbnail:'assets/portfolio/thumbnails/otros/thumb-reel-emprendimiento-01.png', video:'https://res.cloudinary.com/djsqzbj0j/video/upload/v1774916887/reel-emprendimiento-01_l7qgzk.mp4', featured:true },
+      { id:'emprendimiento-02', title:'Emprendimiento Promocional 02', subtitle:'Videos comerciales optimizados para redes.', category:'otros', categoryLabel:'Otros', thumbnail:'assets/portfolio/thumbnails/otros/thumb-reel-emprendimiento-02.png', video:'https://res.cloudinary.com/djsqzbj0j/video/upload/v1774916496/reel-emprendimiento-02_fkzaqr.mp4', featured:false },
+      { id:'emprendimiento-03', title:'Emprendimiento Promocional 03', subtitle:'Edición dinámica para negocios locales.', category:'otros', categoryLabel:'Otros', thumbnail:'assets/portfolio/thumbnails/otros/thumb-reel-emprendimiento-03.png', video:'https://res.cloudinary.com/djsqzbj0j/video/upload/v1774916500/reel-emprendimiento-03_q3g0jn.mp4', featured:false },
+      { id:'emprendimiento-04', title:'Emprendimiento Promocional 04', subtitle:'Estética visual coherente con el branding.', category:'otros', categoryLabel:'Otros', thumbnail:'assets/portfolio/thumbnails/otros/thumb-reel-emprendimiento-04.png', video:'https://res.cloudinary.com/djsqzbj0j/video/upload/v1774916496/reel-emprendimiento-04_uhydc0.mp4', featured:false },
+      { id:'motion-01', title:'Motion Graphics', subtitle:'Animación y movimiento con intención narrativa.', category:'otros', categoryLabel:'Otros', thumbnail:'assets/portfolio/thumbnails/otros/thumb-reel-motionG-01.png', video:'https://res.cloudinary.com/djsqzbj0j/video/upload/v1774916500/reel-motionG-01_xq4nve.mp4', featured:false },
+      { id:'ui-animation-01', title:'Animación UI / UX', subtitle:'Interfaces animadas con ritmo visual y precisión.', category:'otros', categoryLabel:'Otros', thumbnail:'assets/portfolio/thumbnails/otros/thumb-reel-UIanimation-01.png', video:'https://res.cloudinary.com/djsqzbj0j/video/upload/v1774916500/reel-UIanimation-01_jjschi.mp4', featured:false }
     ];
 
     let ALL_ITEMS    = [];

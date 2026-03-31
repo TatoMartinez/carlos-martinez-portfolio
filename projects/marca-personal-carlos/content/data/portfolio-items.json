@@ -6,7 +6,7 @@
     "category": "fitness-cinematic",
     "categoryLabel": "Reels Fitness Cinematográficos",
     "thumbnail": "assets/portfolio/thumbnails/fitness-cinematic/thumb-fitness-cinematic-01.png",
-    "video": "assets/videos/portfolio/fitness-cinematic/video-fitness-cinematic-01.mp4",
+    "video": "https://res.cloudinary.com/djsqzbj0j/video/upload/v1774916112/video-fitness-cinematic-01_yjtzuo.mp4",
     "featured": true
   },
   {
@@ -16,7 +16,7 @@
     "category": "fitness-cinematic",
     "categoryLabel": "Reels Fitness Cinematográficos",
     "thumbnail": "assets/portfolio/thumbnails/fitness-cinematic/thumb-fitness-cinematic-02.png",
-    "video": "assets/videos/portfolio/fitness-cinematic/video-fitness-cinematic-02.mp4",
+    "video": "https://res.cloudinary.com/djsqzbj0j/video/upload/v1774916117/video-fitness-cinematic-02_ez5ntl.mp4",
     "featured": false
   },
   {
@@ -26,7 +26,7 @@
     "category": "fitness-cinematic",
     "categoryLabel": "Reels Fitness Cinematográficos",
     "thumbnail": "assets/portfolio/thumbnails/fitness-cinematic/thumb-fitness-cinematic-03.png",
-    "video": "assets/videos/portfolio/fitness-cinematic/video-fitness-cinematic-03.mp4",
+    "video": "https://res.cloudinary.com/djsqzbj0j/video/upload/v1774917197/video-fitness-cinematic-03_kwhtjp.mp4",
     "featured": false
   },
   {
@@ -36,7 +36,7 @@
     "category": "fitness-marca-personal",
     "categoryLabel": "Reels Fitness Marca Personal",
     "thumbnail": "assets/portfolio/thumbnails/fitness-marca-personal/thumb-fitness-mp-01.png",
-    "video": "assets/videos/portfolio/fitness-marca-personal/video-fitness-mp-01.mp4",
+    "video": "https://res.cloudinary.com/djsqzbj0j/video/upload/v1774916337/video-fitness-mp-01_mjfaer.mp4",
     "featured": true
   },
   {
@@ -46,7 +46,7 @@
     "category": "fitness-marca-personal",
     "categoryLabel": "Reels Fitness Marca Personal",
     "thumbnail": "assets/portfolio/thumbnails/fitness-marca-personal/thumb-fitness-mp-02.png",
-    "video": "assets/videos/portfolio/fitness-marca-personal/video-fitness-mp-02.mp4",
+    "video": "https://res.cloudinary.com/djsqzbj0j/video/upload/v1774917229/video-fitness-mp-02_ljcda4.mp4",
     "featured": false
   },
   {
@@ -56,7 +56,7 @@
     "category": "marcas-ropa",
     "categoryLabel": "Reels Marcas de Ropa",
     "thumbnail": "assets/portfolio/thumbnails/marcas-ropa/thumb-brand-clothing-01.png",
-    "video": "assets/videos/portfolio/marcas-ropa/video-brand-clothing-01.mp4",
+    "video": "https://res.cloudinary.com/djsqzbj0j/video/upload/v1774916436/video-brand-clothing-01_vcfcyo.mp4",
     "featured": true
   },
   {
@@ -66,7 +66,7 @@
     "category": "marcas-ropa",
     "categoryLabel": "Reels Marcas de Ropa",
     "thumbnail": "assets/portfolio/thumbnails/marcas-ropa/thumb-brand-clothing-02.png",
-    "video": "assets/videos/portfolio/marcas-ropa/video-brand-clothing-02.mp4",
+    "video": "https://res.cloudinary.com/djsqzbj0j/video/upload/v1774916434/video-brand-clothing-02_calxbq.mp4",
     "featured": false
   },
   {
@@ -76,7 +76,7 @@
     "category": "otros",
     "categoryLabel": "Otros",
     "thumbnail": "assets/portfolio/thumbnails/otros/thumb-reel-emprendimiento-01.png",
-    "video": "assets/videos/portfolio/otros/reel-emprendimiento-01.mp4",
+    "video": "https://res.cloudinary.com/djsqzbj0j/video/upload/v1774916887/reel-emprendimiento-01_l7qgzk.mp4",
     "featured": true
   },
   {
@@ -86,7 +86,7 @@
     "category": "otros",
     "categoryLabel": "Otros",
     "thumbnail": "assets/portfolio/thumbnails/otros/thumb-reel-emprendimiento-02.png",
-    "video": "assets/videos/portfolio/otros/reel-emprendimiento-02.mp4",
+    "video": "https://res.cloudinary.com/djsqzbj0j/video/upload/v1774916496/reel-emprendimiento-02_fkzaqr.mp4",
     "featured": false
   },
   {
@@ -96,7 +96,7 @@
     "category": "otros",
     "categoryLabel": "Otros",
     "thumbnail": "assets/portfolio/thumbnails/otros/thumb-reel-emprendimiento-03.png",
-    "video": "assets/videos/portfolio/otros/reel-emprendimiento-03.mp4",
+    "video": "https://res.cloudinary.com/djsqzbj0j/video/upload/v1774916500/reel-emprendimiento-03_q3g0jn.mp4",
     "featured": false
   },
   {
@@ -106,7 +106,7 @@
     "category": "otros",
     "categoryLabel": "Otros",
     "thumbnail": "assets/portfolio/thumbnails/otros/thumb-reel-emprendimiento-04.png",
-    "video": "assets/videos/portfolio/otros/reel-emprendimiento-04.mp4",
+    "video": "https://res.cloudinary.com/djsqzbj0j/video/upload/v1774916496/reel-emprendimiento-04_uhydc0.mp4",
     "featured": false
   },
   {
@@ -116,7 +116,7 @@
     "category": "otros",
     "categoryLabel": "Otros",
     "thumbnail": "assets/portfolio/thumbnails/otros/thumb-reel-motionG-01.png",
-    "video": "assets/videos/portfolio/otros/reel-motionG-01.mp4",
+    "video": "https://res.cloudinary.com/djsqzbj0j/video/upload/v1774916500/reel-motionG-01_xq4nve.mp4",
     "featured": false
   },
   {
@@ -126,7 +126,7 @@
     "category": "otros",
     "categoryLabel": "Otros",
     "thumbnail": "assets/portfolio/thumbnails/otros/thumb-reel-UIanimation-01.png",
-    "video": "assets/videos/portfolio/otros/reel-UIanimation-01.mp4",
+    "video": "https://res.cloudinary.com/djsqzbj0j/video/upload/v1774916500/reel-UIanimation-01_jjschi.mp4",
     "featured": false
   }
 ]
