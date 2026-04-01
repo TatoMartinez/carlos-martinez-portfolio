@@ -140,35 +140,54 @@
     ============================================================ */
     .modal-overlay {
       position: fixed; inset: 0;
-      background: rgba(0,0,0,0.96);
+      background: rgba(0,0,0,0.97);
       z-index: 300;
       display: flex; align-items: center; justify-content: center;
       opacity: 0; pointer-events: none;
-      transition: opacity var(--transition);
-      backdrop-filter: blur(10px);
+      transition: opacity 0.35s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+      backdrop-filter: blur(20px);
     }
     .modal-overlay.open { opacity: 1; pointer-events: all; }
-    .modal-content { position: relative; width: min(92vw, 900px); }
+    .modal-content {
+      position: relative;
+      width: min(92vw, 480px);
+      transform: translateY(12px) scale(0.97);
+      transition: transform 0.35s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    }
+    .modal-overlay.open .modal-content {
+      transform: translateY(0) scale(1);
+    }
     .modal-video {
       width: 100%; aspect-ratio: 9/16;
       background: #000;
-      border-radius: var(--radius-md);
+      border-radius: 2px;
       overflow: hidden;
       max-height: 88vh;
+      box-shadow: 0 0 0 1px rgba(255,255,255,0.07), 0 32px 80px rgba(0,0,0,0.8);
     }
     .modal-video video { width: 100%; height: 100%; object-fit: contain; display: block; }
     .modal-close {
       position: absolute;
-      top: -44px; right: 0;
+      top: -48px; right: 0;
+      display: flex; align-items: center; gap: 8px;
       font-family: var(--font-mono);
-      font-size: 11px;
-      letter-spacing: 0.15em;
+      font-size: 10px;
+      letter-spacing: 0.2em;
       text-transform: uppercase;
-      color: var(--color-text-dim);
+      color: var(--color-text-muted);
       transition: color var(--transition-fast);
       cursor: none;
+      padding: 8px 0;
     }
-    .modal-close:hover { color: var(--color-accent); }
+    .modal-close::before {
+      content: '';
+      display: block;
+      width: 20px; height: 1px;
+      background: currentColor;
+      transition: width var(--transition-fast);
+    }
+    .modal-close:hover { color: var(--color-text); }
+    .modal-close:hover::before { width: 32px; }
 
     /* ============================================================
        NAV
@@ -591,15 +610,30 @@
       cursor: none;
     }
     .portfolio-thumb {
+      position: relative; z-index: 0;
       width: 100%; height: 100%;
       object-fit: cover;
       display: block;
-      transition: transform 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+      transition: transform 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94), opacity 0.4s ease;
     }
     .portfolio-item:hover .portfolio-thumb { transform: scale(1.05); }
 
+    /* Premium video preview on hover (desktop only) */
+    .portfolio-preview {
+      position: absolute; inset: 0; z-index: 1;
+      width: 100%; height: 100%;
+      object-fit: cover;
+      opacity: 0;
+      transition: opacity 0.5s ease;
+      pointer-events: none;
+    }
+    @media (hover: hover) and (pointer: fine) {
+      .portfolio-item:hover .portfolio-preview { opacity: 1; }
+    }
+
     .portfolio-overlay {
       position: absolute; inset: 0;
+      z-index: 2;
       background: linear-gradient(to top, rgba(10,10,10,0.95) 0%, rgba(10,10,10,0.2) 55%, transparent 100%);
       opacity: 0;
       transition: opacity var(--transition);
@@ -634,7 +668,7 @@
     }
 
     .play-icon {
-      position: absolute;
+      position: absolute; z-index: 3;
       top: 50%; left: 50%;
       transform: translate(-50%, -50%) scale(0.7);
       width: 52px; height: 52px;
@@ -692,8 +726,10 @@
       transition: transform 0.6s var(--transition);
     }
     .ia-item:hover video { transform: scale(1.04); }
+    .ia-item-static { z-index: 2; transition: opacity 0.6s ease; }
     .ia-item-overlay {
       position: absolute; inset: 0;
+      z-index: 3;
       background: linear-gradient(to top, rgba(10,10,10,0.92) 0%, transparent 55%);
       display: flex; align-items: flex-end;
       padding: var(--space-md);
@@ -1527,7 +1563,7 @@
   <!-- Modal -->
   <div class="modal-overlay" id="modal" role="dialog" aria-modal="true" aria-label="Reproductor de video">
     <div class="modal-content">
-      <button class="modal-close" id="modalClose" aria-label="Cerrar video">✕ Cerrar</button>
+      <button class="modal-close" id="modalClose" aria-label="Cerrar video">Cerrar</button>
       <div class="modal-video" id="modalVideo"></div>
     </div>
   </div>
@@ -1761,7 +1797,7 @@
                 <li>optimización para Instagram y TikTok</li>
                 <li>piezas pensadas para impactar y posicionar</li>
               </ul>
-              <a href="#contacto" class="service-expand-cta">Ver ejemplos fitness</a>
+              <a href="#portafolio" data-filter-nav="fitness-cinematic" class="service-expand-cta">Ver ejemplos fitness</a>
             </div>
           </div>
         </article>
@@ -1788,7 +1824,7 @@
                 <li>edición con intención comercial y estética premium</li>
                 <li>contenido adaptable a Instagram, TikTok y formatos digitales</li>
               </ul>
-              <a href="#contacto" class="service-expand-cta">Ver proyectos de marca</a>
+              <a href="#portafolio" data-filter-nav="marcas-ropa" class="service-expand-cta">Ver proyectos de marca</a>
             </div>
           </div>
         </article>
@@ -2218,6 +2254,44 @@
   <script>
     'use strict';
 
+    /* ── UTILITIES ──────────────────────────────────────────── */
+    function escapeHTML(str) {
+      return String(str)
+        .replace(/&/g, '&amp;')
+        .replace(/</g, '&lt;')
+        .replace(/>/g, '&gt;')
+        .replace(/"/g, '&quot;')
+        .replace(/'/g, '&#39;');
+    }
+
+    const SAFE_VIDEO_HOSTS = ['res.cloudinary.com', 'player.vimeo.com', 'www.youtube.com'];
+    function isSafeVideoUrl(url) {
+      if (!url || typeof url !== 'string') return false;
+      try {
+        const u = new URL(url);
+        return u.protocol === 'https:' && SAFE_VIDEO_HOSTS.includes(u.hostname);
+      } catch { return false; }
+    }
+
+    /* ── VIDEO LOOP MOBILE FIX ──────────────────────────────── */
+    function enforceVideoLoop(video) {
+      if (!video) return;
+      video.loop = true;
+      video.addEventListener('ended', () => {
+        video.currentTime = 0;
+        video.play().catch(() => {});
+      });
+    }
+
+    document.querySelectorAll('.hero-video-bg video, .contact-video-bg video').forEach(v => {
+      enforceVideoLoop(v);
+      document.addEventListener('visibilitychange', () => {
+        if (!document.hidden && v.paused) v.play().catch(() => {});
+      });
+    });
+
+    document.querySelectorAll('.ia-item video').forEach(enforceVideoLoop);
+
     /* ── CURSOR ─────────────────────────────────────────────── */
     const cursor = document.getElementById('cursor');
     const isMouse = window.matchMedia('(hover: hover) and (pointer: fine)').matches;
@@ -2318,10 +2392,13 @@
       // Detect YouTube / Vimeo / local
       let html;
       if (videoSrc.startsWith('vimeo:')) {
-        html = `<iframe src="https://player.vimeo.com/video/${videoSrc.slice(6)}?autoplay=1&color=FF5B1A" style="width:100%;height:100%;border:none;border-radius:8px;" allow="autoplay;fullscreen" allowfullscreen title="Video"></iframe>`;
+        const vimeoId = videoSrc.slice(6);
+        if (!/^\d+$/.test(vimeoId)) return;
+        html = `<iframe src="https://player.vimeo.com/video/${vimeoId}?autoplay=1&color=FF5B1A" style="width:100%;height:100%;border:none;border-radius:8px;" allow="autoplay;fullscreen" allowfullscreen title="Video"></iframe>`;
       } else if (/^[A-Za-z0-9_-]{11}$/.test(videoSrc)) {
         html = `<iframe src="https://www.youtube.com/embed/${videoSrc}?autoplay=1&rel=0" style="width:100%;height:100%;border:none;border-radius:8px;" allow="autoplay;fullscreen" allowfullscreen title="Video"></iframe>`;
       } else {
+        if (!isSafeVideoUrl(videoSrc)) return;
         html = `<video src="${videoSrc}" controls autoplay playsinline style="width:100%;height:100%;border-radius:8px;background:#000;" aria-label="Video del portafolio"></video>`;
       }
       modalVideo.innerHTML = html;
@@ -2414,30 +2491,54 @@
         item.addEventListener('keydown', e => {
           if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); openModal(item.dataset.video); }
         });
-        if (isMouse && cursor) {
-          item.addEventListener('mouseenter', () => cursor.classList.add('hover'));
-          item.addEventListener('mouseleave', () => cursor.classList.remove('hover'));
+        if (isMouse) {
+          if (cursor) {
+            item.addEventListener('mouseenter', () => cursor.classList.add('hover'));
+            item.addEventListener('mouseleave', () => cursor.classList.remove('hover'));
+          }
+          // Premium hover preview
+          const preview = item.querySelector('.portfolio-preview');
+          if (preview) {
+            item.addEventListener('mouseenter', () => {
+              preview.play().catch(() => {});
+            });
+            item.addEventListener('mouseleave', () => {
+              preview.pause();
+              preview.currentTime = 0;
+            });
+          }
         }
       });
     }
 
     function buildItemHTML(item) {
+      const safeVideo    = isSafeVideoUrl(item.video) ? item.video : '';
+      const safeThumb    = item.thumbnail ? item.thumbnail : '';
+      const safeTitle    = escapeHTML(item.title || '');
+      const safeSubtitle = escapeHTML(item.subtitle || '');
+      const safeCatLabel = escapeHTML(item.categoryLabel || '');
+      const safeCategory = escapeHTML(item.category || '');
+      const previewEl = safeVideo
+        ? `<video class="portfolio-preview" src="${safeVideo}" muted loop playsinline preload="none" tabindex="-1" aria-hidden="true"></video>`
+        : '';
       return `
         <article class="portfolio-item"
-                 data-video="${item.video}"
-                 data-category="${item.category}"
+                 data-video="${safeVideo}"
+                 data-category="${safeCategory}"
                  role="button" tabindex="0"
-                 aria-label="Ver: ${item.title}">
+                 aria-label="Ver: ${safeTitle}">
           <img class="portfolio-thumb"
-               src="${item.thumbnail}"
-               alt="${item.title}"
+               src="${safeThumb}"
+               alt="${safeTitle}"
                loading="lazy"
+               decoding="async"
                onerror="this.style.display='none'" />
+          ${previewEl}
           <div class="play-icon" aria-hidden="true"></div>
           <div class="portfolio-overlay">
-            <div class="portfolio-tag">${item.categoryLabel}</div>
-            <div class="portfolio-name">${item.title}</div>
-            <div class="portfolio-sub">${item.subtitle}</div>
+            <div class="portfolio-tag">${safeCatLabel}</div>
+            <div class="portfolio-name">${safeTitle}</div>
+            <div class="portfolio-sub">${safeSubtitle}</div>
           </div>
         </article>`;
     }
@@ -2488,6 +2589,20 @@
       renderPortfolio('all');
     });
 
+    /* ── SERVICE CTA → PORTAFOLIO FILTRADO ─────────────────── */
+    document.querySelectorAll('[data-filter-nav]').forEach(link => {
+      link.addEventListener('click', e => {
+        e.preventDefault();
+        const filter = link.dataset.filterNav;
+        document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+        const targetBtn = document.querySelector(`.filter-btn[data-filter="${filter}"]`);
+        if (targetBtn) targetBtn.classList.add('active');
+        renderPortfolio(filter);
+        const section = document.getElementById('portafolio');
+        if (section) section.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      });
+    });
+
     /* ── IA ITEMS — abren modal ─────────────────────────────── */
     document.querySelectorAll('.ia-item[data-video]').forEach(item => {
       item.addEventListener('click', () => openModal(item.dataset.video));
@@ -2504,7 +2619,11 @@
         if (entry.isIntersecting) {
           vid.preload = 'auto';
           vid.load();
-          vid.play().catch(() => {});
+          vid.play().then(() => {
+            // Fade out static placeholder once video is playing
+            const staticEl = entry.target.querySelector('.ia-item-static');
+            if (staticEl) { staticEl.style.opacity = '0'; }
+          }).catch(() => {});
         } else {
           vid.pause();
         }
